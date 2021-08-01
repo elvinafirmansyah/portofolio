@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Main Color */
+:root {
+  --lightpurple: #C5BDFF;
+  --poppins: 'Poppins', sans-serif;
+  --black: #000000;
+  --abril: 'Abril Fatface', cursive;
+  --lato:  'Lato', sans-serif;
+  --purple: #9485FF;
+  --darkgray: #6E6C78;
+  --white: #FFFFFF;
+  --lightgray: #898796;
+}
+/*Navbar*/
+.navbar{
+	font-family: var(--poppins);
+}
+.navbar .container-fluid .navbar-item{
+	font-size: 28px;
+	letter-spacing: 2px;
+	font-weight: 550;
+	color: black;
+	text-decoration: none;
+}
+.navbar .container-fluid .span{
+	color: var(--purple)
+}
+.navbar .navbar-nav .nav-item a{
+	font-weight: 400;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: black;
+}
+.d-flex .btn{
+	font-size: 19px;
+	background-color: var(--purple);
+	border-radius: 50px;
+	color: var(--white);
+	text-transform: uppercase;
+}
+/*jumbotron*/
+.jumbotron{
+	background-image: url(img/scr.png);
+	background-size: cover;
+	height: 100vh;
+	margin-top: -76px;
+}
+.jumbotron .text h2{
+	text-transform: uppercase;
+	font-family: var(--lato);
+	font-size: 24px;
+	font-weight: 300;
+	padding-top: 9rem;
+}
+.jumbotron .text h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 75px;
+	color: black
+}
+.jumbotron .text span{
+	color: var(--purple);
+}
+.jumbotron .text h3{
+	text-transform: capitalize;
+	font-family: var(--poppins);
+	font-size: 24px;
+	font-weight: 400;
+	display: flex;
+	padding-bottom: 25px;
+}
+.jumbotron .text h3::after{
+	content: '';
+	display: block;
+	border-right: 7px solid var(--lightpurple);
+	width: 4%;
+}
+.jumbotron .sosial-media a{
+	text-decoration: none;
+	color: var(--lightgray);
+	padding-right: 25px;
+	width: 50px;
+	height: 50px;
+}
+/*About*/
+#about{
+	padding-bottom: 4rem;
+}
+.text-about{
+	padding-top: 5rem;
+}
+.text-about h1{
+	font-family: var(--abril);
+	font-size: 50px;
+	text-align: left;
+}
+.text-about span{
+	color: var(--purple);
+}
+.text-about p{
+	font-family: var(--poppins);
+	font-size: 28px;
+}
+.about-img{
+	padding-top: 7rem;
+}
+/*project*/
+#project{
+	padding: 5rem 0;
+	background-image: url(img/back.png);
+	background-size: cover
+}
+#carouselExampleFade .carousel-control-prev{
+	background-color: var(--lightpurple);
+	border-radius: 50%;
+	height: 59px;
+	width: 60.5px;
+	top: 45%;
+	left: 5%;
+}
+#carouselExampleFade .carousel-control-next{
+	background-color: var(--lightpurple);
+	border-radius: 50%;
+	height: 59px;
+	width: 60.5px;
+	top: 45%;
+	right: 5%;
+}
+.title-project h1{
+	font-family: var(--abril);
+	font-size: 50px;
+	padding-bottom: 2rem;
+}
+.title-project span{
+	color: var(--purple);
+}
+.design .web{
+	padding-right: 30px;
+}
+.design a{
+	padding-bottom: 2rem;
+	font-family: var(--lato);
+	text-decoration: none;
+	font-size: 27px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	color: black;
+}
+/*deskop version biasa*/
+@media (min-width: 992px) {	
+	/*navbar*/
+	.navbar{
+		padding: 0.5rem 3rem;
+		background: transparent;
+	}
+	.navbar .navbar-nav .nav-item{
+		padding: 3px 10px;
+	}
+	.navbar .navbar-nav .nav-item a:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 7px solid var(--purple);
+		width: 50%;
+		margin: auto;
+		padding-bottom: 2px;
+		margin-bottom: -9px;
+	}
+	/* jumbotron */
+	.jumbotron .text h2{
+		padding-top: 20rem;
+	}
+	/*About*/
+	.text-about{
+		padding-top: 25rem 0 0 3rem;
+	}
+	.text-about h1{
+		font-size: 65px;
+	}
+	.text-about span{
+		color: var(--purple);
+	}
+	.text-about p{
+		font-size: 28px;
+	}
+	#about{
+		background-image: url(img/ABOUT.png);
+		background-size: cover;
+		height: 100vh;
+	}
+	/*project*/
+	#carouselExampleFade .carousel-inner .carousel-item img{
+		height: 80vh;
+	} 
+	.title-project h1{
+		font-size: 65px;
+	}
+}
