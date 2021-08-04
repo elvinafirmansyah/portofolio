@@ -97,16 +97,25 @@
 	font-family: var(--abril);
 	font-size: 50px;
 	text-align: left;
+	padding-bottom: 20px;
+}
+.text-about h1:after{
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 20%;
+	padding-bottom: 2px;
+	margin-bottom: -9px;
 }
 .text-about span{
 	color: var(--purple);
 }
 .text-about p{
 	font-family: var(--poppins);
-	font-size: 28px;
+	font-size: 23px;
 }
 .about-img{
-	padding-top: 7rem;
+	padding-top: 9rem;
 }
 /*project*/
 #project{
@@ -133,22 +142,95 @@
 .title-project h1{
 	font-family: var(--abril);
 	font-size: 50px;
-	padding-bottom: 2rem;
+	padding-bottom: 3rem;
+}
+.title-project h1:after{
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 10%;
+	padding-bottom: 9px;
+	margin-bottom: -9px;
 }
 .title-project span{
 	color: var(--purple);
 }
-.design .web{
-	padding-right: 30px;
+/*skills&toools*/
+#skills{
+	padding: 4rem 0;
 }
-.design a{
+.title-skills h1{
+	font-family: var(--abril);
+	font-size: 50px;
+	padding-bottom: 4rem;
+}
+.title-skills h1:after{
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 8%;
+	padding-bottom: 9px;
+	margin-bottom: -9px;
+}
+.title-skills span{
+	color: var(--purple);
+}
+#skills .container-fluid .gambar-skills .col-lg-3{
+	padding-bottom: 3.5rem;
+}
+#skills .container-fluid .gambar-skills .col-lg-3 img:hover{
+	filter: invert(70%);
+}
+/*Promise*/
+#promise{
+	padding: 4rem 0;
+	background-image: url(img/THINGS.png);
+	background-size: cover;
+}
+.promise-title h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 50px;
+	text-align: left;
 	padding-bottom: 2rem;
-	font-family: var(--lato);
-	text-decoration: none;
-	font-size: 27px;
-	text-transform: uppercase;
-	letter-spacing: 6px;
-	color: black;
+}
+.promise-title span{
+	color: var(--purple);
+}
+.promise-card{
+	border: none;
+}
+.isi-card{
+	padding-bottom: 2rem;
+}
+
+/*Testimonial*/
+#testimonial{
+	padding: 4rem 0;
+}
+#testimonial .col-lg-5{
+	background-color: var(--lightpurple);
+}
+#testimonial .one{
+	padding-top: 1.7rem;
+	padding-left: 15px;  
+}
+#testimonial .one i{
+	color: var(--purple);
+	padding-bottom: 15px;
+}
+#testimonial .one h4{
+	font-family: var(--poppins);
+	font-weight: 400;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+#testimonial .one h2{
+	font-size: 35px;
+	font-family: var(--poppins);
+	font-weight: 600;
+	color: var(--purple);
+	padding-bottom: 2rem;
 }
 /*deskop version biasa*/
 @media (min-width: 992px) {	
@@ -170,12 +252,52 @@
 		margin-bottom: -9px;
 	}
 	/* jumbotron */
+	.jumbotron .text {
+		padding-left: 4rem;
+	}
 	.jumbotron .text h2{
-		padding-top: 20rem;
+		text-transform: uppercase;
+		font-family: var(--lato);
+		font-size: 30px;
+		font-weight: 300;
+		padding-top: 27rem;
+	}
+	.jumbotron .text h1{
+		text-transform: capitalize;
+		font-family: var(--abril);
+		font-size: 85px;
+		color: black;
+	}
+	.jumbotron .text span{
+		color: var(--purple);
+	}
+	.jumbotron .text h3{
+		text-transform: capitalize;
+		font-family: var(--poppins);
+		font-size: 26px;
+		font-weight: 400;
+		display: flex;
+		padding-bottom: 25px;
+	}
+	.jumbotron .text h3::after{
+		content: '';
+		display: block;
+		border-right: 7px solid var(--lightpurple);
+		width: 4%;
+	}
+	.jumbotron .sosial-media a{
+		text-decoration: none;
+		color: var(--lightgray);
+		padding-right: 25px;
+		width: 70px;
+		height: 70px;
+	}
+	.jumbotron .sosial-media a:hover{
+		color: var(--purple);
 	}
 	/*About*/
 	.text-about{
-		padding-top: 25rem 0 0 3rem;
+		padding: 19rem 0 0 4rem;
 	}
 	.text-about h1{
 		font-size: 65px;
@@ -189,7 +311,10 @@
 	#about{
 		background-image: url(img/ABOUT.png);
 		background-size: cover;
-		height: 100vh;
+		height: auto;
+	}
+	.about-img{
+		padding-top: 5rem;
 	}
 	/*project*/
 	#carouselExampleFade .carousel-inner .carousel-item img{
@@ -197,5 +322,45 @@
 	} 
 	.title-project h1{
 		font-size: 65px;
+		padding-left: 4rem; 
+	}
+	/*skills&tools*/
+	#skills{
+		background-image: url(img/SKILLS.png);
+		background-size: cover;
+
+	}
+	.title-skills h1{
+		padding-left: 4rem;
+		font-size: 65px;
+	}
+	.gambar-skills{
+		padding-left: 4rem;
+	}
+	/*promise*/
+	#promise{
+		background-image: url(img/THINGS.png);
+		background-size: cover;
+	}
+	.promise-title h1{
+		font-size: 65px;
+		text-align: center;
+	}
+	.datar-promise .isi-card{
+		padding-bottom: 2rem;
+	}
+	#promise .container-fluid .datar-promise{
+		padding: 0 4rem;
+	}
+	/*testimonial*/
+	#testimonial .one{
+		padding-top: 6rem;
+		padding-left: 3rem;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;  
+	}
+	#testimonial .two{
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;  
 	}
 }

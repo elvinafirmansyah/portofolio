@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -68,13 +71,12 @@
         </div>
       </div>
     </nav>
-
     <!-- A Navbar -->
 
     <!-- Jumbotron -->
     <section id="home">
       <div class="jumbotron jumbotron-fluid">
-        <div class="container text">
+        <div class="container-fluid text">
           <h2 class="display-4">about & contact</h2>
           <h1 class="display-4">Hi, <span class="span">I’m  Elvina</span></h1>
           <h3 class="lead">UI/UX Designer</h3>
@@ -116,6 +118,128 @@
     </section>
     <!-- A About -->
 
+    <!-- Selected Project -->
+  <section id="project">
+    <div class="container-fluid">
+      <div class="title-project">
+        <h1 class="project-isi">My <span>Project</span></h1>
+      </div>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner justify-content-center">
+        <div class="carousel-item active justify-content-center d-flex">
+          <img src="img/web1.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center d-flex">
+          <img src="img/web3.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center d-flex">
+          <img src="img/web2.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center d-flex">
+          <img src="img/mobile1.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center d-flex">
+          <img src="img/mobile2.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+        <div class="carousel-item justify-content-center d-flex">
+          <img src="img/web5.png" class="d-block w-85 img-fluid" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+    <!-- A Selected Project -->
+
+    <!-- Skills & Tools -->
+    <section id="skills">
+      <div class="container-fluid">
+        <div class="title-skills">
+          <h1>Skills <span>& Tools</span></h1>
+        </div>
+        <div class="row gambar-skills">
+          <div class="col-lg-3">
+            <div class="main-card">
+              <img src="img/flogo.png" class="rounded" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="main-card">
+              <img src="img/alogo.png" class="rounded" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="main-card">
+              <img src="img/hlogo.png" class="rounded" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="main-card">
+              <img src="img/clogo.png" class="rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- A Skills & Tools -->
+
+    <!-- Promise -->
+    <section id="promise">
+      <div class="container-fluid">
+        <div class="promise-title">
+          <h1>Four <span>thing</span> i always <span>promise</span></h1>
+        </div>
+        <div class="row datar-promise">
+          <div class="col-lg-6 isi-card">
+            <div class="card text-white promise-card text-center">
+              <img src="img/promise1.png" class="card-img" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-6 isi-card">
+            <div class="card text-white promise-card text-center">
+              <img src="img/promise2.png" class="card-img" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-6 isi-card">
+            <div class="card text-white promise-card text-center">
+              <img src="img/promise3.png" class="card-img" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-6 isi-card">
+            <div class="card text-white promise-card text-center">
+              <img src="img/promise4.png" class="card-img" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- A Promise -->
+
+    <!-- Testimonial-->
+    <section id="testimonial">
+      <div class="container-fluid">
+        <div class="row justify-content-center d-flex row-testi">
+          <div class="col-lg-5 one">
+              <i class="fas fa-quote-left fa-4x"></i>
+              <h4>work with alena is such a happiness for me. She is very humble, smart and helpful.  I recommended her to you guys who needs a design stuff.</h4>
+              <h2>Audie Canrbre</h2>  
+          </div>
+          <div class="col-lg-5 two">
+            <div class="img-testi">
+              <img src="img/pointing.png" width="500" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- A Testimonial -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
