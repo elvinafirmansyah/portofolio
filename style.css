@@ -232,6 +232,36 @@
 	color: var(--purple);
 	padding-bottom: 2rem;
 }
+/*Contact*/
+#contact{
+	padding: 6rem 0;
+	background-image: url(img/contact.png);
+}
+.img-contact{
+	margin-top: -1.5rem;
+}
+.contact-title h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 50px;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.contact-title span{
+	color: var(--purple);
+}
+#contact form .form-label{
+	font-family: var(--poppins);
+	font-size: 22px;
+}
+#contact form input{
+	border-radius: 0%;
+	color: var(--purple);
+}
+#contact textarea{
+	border-radius: 0%;
+}
 /*deskop version biasa*/
 @media (min-width: 992px) {	
 	/*navbar*/
@@ -250,7 +280,7 @@
 		margin: auto;
 		padding-bottom: 2px;
 		margin-bottom: -9px;
-	}
+	}	
 	/* jumbotron */
 	.jumbotron .text {
 		padding-left: 4rem;
@@ -362,5 +392,8 @@
 	#testimonial .two{
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;  
+	}
+	.contact-title  h1{
+		font-size: 65px;
 	}
 }
