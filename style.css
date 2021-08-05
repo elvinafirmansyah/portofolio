@@ -236,6 +236,7 @@
 #contact{
 	padding: 6rem 0;
 	background-image: url(img/contact.png);
+	background-size: cover;
 }
 .img-contact{
 	margin-top: -1.5rem;
@@ -261,6 +262,16 @@
 }
 #contact textarea{
 	border-radius: 0%;
+	color: var(--purple);
+}
+/* Footer */
+footer{
+	background-color: var(--purple);
+	font-size: 21px;
+}
+.footer a{
+	text-decoration: none;
+	font-family: var(--poppins);
 }
 /*deskop version biasa*/
 @media (min-width: 992px) {	
