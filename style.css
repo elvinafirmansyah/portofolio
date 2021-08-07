@@ -306,7 +306,7 @@ footer{
 		font-family: var(--lato);
 		font-size: 30px;
 		font-weight: 300;
-		padding-top: 23.5rem;
+		padding-top: 23rem;
 	}
 	.jumbotron .text h1{
 		text-transform: capitalize;
