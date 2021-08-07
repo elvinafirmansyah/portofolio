@@ -18,6 +18,7 @@
 /*Navbar*/
 .navbar{
 	font-family: var(--poppins);
+	background-color: white;
 }
 .navbar .container-fluid .navbar-item{
 	font-size: 28px;
@@ -43,11 +44,15 @@
 	text-transform: uppercase;
 }
 /*jumbotron*/
+.jumbotron .text{
+	padding-bottom: 6rem;
+}
 .jumbotron{
 	background-image: url(img/scr.png);
 	background-size: cover;
 	height: 100vh;
-	margin-top: -76px;
+	margin-top: -74px;
+	background-position: center;
 }
 .jumbotron .text h2{
 	text-transform: uppercase;
@@ -301,7 +306,7 @@ footer{
 		font-family: var(--lato);
 		font-size: 30px;
 		font-weight: 300;
-		padding-top: 27rem;
+		padding-top: 23.5rem;
 	}
 	.jumbotron .text h1{
 		text-transform: capitalize;
