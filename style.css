@@ -59,7 +59,10 @@
 	font-family: var(--lato);
 	font-size: 24px;
 	font-weight: 300;
-	padding-top: 9rem;
+}
+.jumbotron .text{
+	top: 45%;
+	position: absolute;
 }
 .jumbotron .text h1{
 	text-transform: capitalize;
@@ -306,7 +309,6 @@ footer{
 		font-family: var(--lato);
 		font-size: 30px;
 		font-weight: 300;
-		padding-top: 23rem;
 	}
 	.jumbotron .text h1{
 		text-transform: capitalize;
