@@ -15,6 +15,11 @@
   --white: #FFFFFF;
   --lightgray: #898796;
 }
+::selection {
+  color: var(--lightpurple);
+  background: CornflowerBlue;
+  background-color: var(--black);
+}
 /*Navbar*/
 .navbar{
 	font-family: var(--poppins);
