@@ -54,7 +54,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -82,7 +82,7 @@
         <div class="container-fluid text" data-aos="fade-right" data-aos-offset="300"
      data-aos-easing="ease-in-sine" data-aos-duration="1000">
           <h2 class="display-4">about & contact</h2>
-          <h1 class="display-4">Hi, <span class="span">I’m  Elvina</span></h1>
+          <h1 class="h1">Hi, I’m <span class="span elvina typed-text"></span><span class="cursor">&nbsp;</span></h1>
           <h3 class="lead">UI/UX Designer</h3>
           <!-- Sosial Media -->
               <div class="sosial-media">
@@ -388,7 +388,49 @@
     });
     </script>
 
+    <script>
+      const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
 
+      const textArray = ["Elvina"];
+      const typingDelay = 100;
+      const erasingDelay = 100;
+      const newTextDelay = 2500; // Delay between current and next text
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } 
+        else {
+          cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+          if (charIndex > 0) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } 
+        else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if(textArrayIndex>=textArray.length) textArrayIndex=0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+        if(textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -26,7 +26,7 @@
 	background-color: white;
 }
 .navbar .container-fluid .navbar-item{
-	font-size: 28px;
+	font-size: 28.5px;
 	letter-spacing: 2px;
 	font-weight: 550;
 	color: black;
@@ -37,7 +37,7 @@
 }
 .navbar .navbar-nav .nav-item a{
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 22px;
 	text-transform: uppercase;
 	color: black;
 }
@@ -47,6 +47,7 @@
 	border-radius: 50px;
 	color: var(--white);
 	text-transform: uppercase;
+	padding: 10px 15px;
 }
 .d-flex .btn:hover{
 	background-color: var(--purple);
@@ -75,11 +76,24 @@
 	text-transform: capitalize;
 	font-family: var(--abril);
 	font-size: 75px;
-	color: black
+	color: black;
+	overflow: hidden;
 }
-.jumbotron .text span{
+
+.jumbotron .text h1 .cursor{
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.jumbotron .text h1 .cursor .typing {
+	animation: none;
+}
+.jumbotron .text span{	
 	color: var(--purple);
 }
+
 .jumbotron .text h3{
 	text-transform: capitalize;
 	font-family: var(--poppins);
