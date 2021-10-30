@@ -239,7 +239,7 @@
 	padding-bottom: 3.5rem;
 }
 #skills .container-fluid .gambar-skills .col-lg-3 img:hover{
-	filter: invert(70%);
+	filter: invert(15%);
 }
 /*Promise*/
 #promise{
