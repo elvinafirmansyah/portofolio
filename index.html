@@ -76,11 +76,12 @@
     </nav>
     <!-- A Navbar -->
 
+
+
     <!-- Jumbotron -->
     <section id="home">
       <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid text" data-aos="fade-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <div class="container-fluid text">
           <h2 class="display-4">about & contact</h2>
           <h1 class="h1">Hi, I’m <span class="span elvina typed-text"></span><span class="cursor">&nbsp;</span></h1>
           <h3 class="lead">UI/UX Designer</h3>
@@ -108,8 +109,7 @@
       <div class="container-fluid">
         <div class="row justify-content-center d-flex">
           <div class="col-lg-6 col-md-12 justify-content-center d-flex">
-            <div class="text-capitalize text-about" data-aos="fade-left" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+            <div class="text-capitalize text-about">
               <h1>About <span>Me</span></h1>
               <p>I’m Elvina Firmansyah, I’m 13 y.o and I’m from Indonesia. I'm interested in UI/UX Designer. I'm learning JavaScript and Web Design
               Now !!!!</p>
@@ -128,13 +128,11 @@
     <!-- Selected Project -->
   <section id="project">
     <div class="container-fluid">
-      <div class="title-project" data-aos="fade-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+      <div class="title-project">
         <h1 class="project-isi">My <span>Project</span></h1>
       </div>
     </div>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="fade-up" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner justify-content-center">
         <div class="carousel-item active justify-content-center d-flex">
           <a href="https://https-github-com-elvirafimansyah.github.io/Korean-Food/" target="blank"><img src="img/kfood.png" class="d-block w-85 img-fluid" alt="..."></a>
@@ -167,12 +165,10 @@
     <!-- Skills & Tools -->
     <section id="skills">
       <div class="container-fluid">
-        <div class="title-skills" data-aos="fade-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <div class="title-skills">
           <h1>Skills <span>& Tools</span></h1>
         </div>
-        <div class="row gambar-skills" data-aos="fade-left" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="1500">
+        <div class="row gambar-skills">
           <div class="col-lg-3">
             <div class="main-card">
               <img src="img/flogo.png" class="rounded" alt="...">
@@ -201,12 +197,10 @@
     <!-- Promise -->
     <section id="promise">
       <div class="container-fluid">
-        <div class="promise-title" data-aos="fade-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <div class="promise-title">
           <h1>Four <span>thing</span> i always <span>promise</span></h1>
         </div>
-        <div class="row datar-promise" data-aos="fade-left" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="1300">
+        <div class="row datar-promise">
           <div class="col-lg-6 isi-card">
             <div class="card text-white promise-card text-center">
               <img src="img/promise1.png" class="card-img" alt="...">
@@ -234,8 +228,7 @@
 
     <!-- Testimonial-->
     <section id="testimonial">
-      <div class="container-fluid" data-aos="fade-up" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+      <div class="container-fluid">
         <div class="row justify-content-center d-flex row-testi">
           <div class="col-lg-5 one">
               <i class="fas fa-quote-left fa-4x"></i>
@@ -256,18 +249,15 @@
     <section id="contact" style=>
         <div class="container">
             <div class="row text-center mb-5">
-                <div class="contact-title" data-aos="fade-down" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="contact-title">
                   <h1>Contact <span>Me</span></h1>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-5 justify-content-center d-flex img-contact" data-aos="fade-right" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="col-lg-5 justify-content-center d-flex img-contact">
                   <img src="img/email.png" class="img-fluid" alt="" width="422">
                 </div>
-                <div class="col-lg-7 d-flex justify-content-center" data-aos="fade-left" data-aos-offset="300"
-     data-aos-easing="ease-in-sine" data-aos-duration="600">
+                <div class="col-lg-7 d-flex justify-content-center">
                   <div class="col-md-6">
                     <div class="alert alert-info alert-dismissible fade show my-alert d-none" role="alert">
                         <strong>Thank You!</strong> We have received your message.
@@ -380,13 +370,6 @@
         });
     </script>
 
-    <!-- Script untuk AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init({
-      once: true,
-    });
-    </script>
 
     <script>
       const typedTextSpan = document.querySelector(".typed-text");
@@ -431,6 +414,20 @@
         if(textArray.length) setTimeout(type, newTextDelay + 250);
       });
      </script>
+
+
+     <!-- navbar scroll -->
+     <script>
+      document.addEventListener("scroll", function () {
+        const navbar = document.querySelector("nav");
+
+        if (this.body.scrollTop > 1 || this.documentElement.scrollTop > 1) {
+          navbar.classList.add("nav-scrolled", "fixed-top");
+        } else {
+          navbar.classList.remove("nav-scrolled", "fixed-top");
+        }
+      });
+    </script>   
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
