@@ -49,17 +49,17 @@
 }
 .navbar .navbar-nav .nav-item a{
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 20px;
 	text-transform: uppercase;
 	color: black;
 }
 .d-flex .btn{
-	font-size: 16px;
+	font-size: 15px;
 	background-color: black;
 	border-radius: 50px;
 	color: var(--white);
 	text-transform: uppercase;
-	padding: 9px 14px;
+	padding: 13px 19px;
 }
 .d-flex .btn:hover{
 	background-color: var(--purple);
@@ -71,7 +71,7 @@
 	padding-bottom: 6rem;
 }
 .jumbotron{
-	background-image: url(img/scr.png);
+	background-image: url(img/scr.png) !important;
 	background-size: cover;
 	height: 100vh;
 	margin-top: -74px;	
@@ -82,7 +82,7 @@
 	font-family: var(--lato);
 	font-size: 24px;
 	font-weight: 300;
-	padding-top: 9rem;
+	padding-top: 9.5rem;
 }
 .jumbotron .text h1{
 	text-transform: capitalize;
@@ -215,6 +215,7 @@
 .title-project span{
 	color: var(--purple);
 }
+
 /*skills&toools*/
 #skills{
 	padding: 4rem 0;
@@ -257,11 +258,23 @@
 .promise-title span{
 	color: var(--purple);
 }
-.promise-card{
-	border: none;
-}
-.isi-card{
+.datar-promise .isi-card{
 	padding-bottom: 2rem;
+}
+#promise .card{
+	border: 3px solid var(--lightpurple);
+	padding: 1rem 0.6rem 2rem 0.6rem;
+	font-family: var(--poppins);
+	width: 35rem;
+}
+#promise .card-title{
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+#promise .card-text{
+	font-size: 18px;
+	font-weight: 400;
 }
 
 /*Testimonial*/
@@ -450,11 +463,8 @@ footer{
 		font-size: 65px;
 		text-align: center;
 	}
-	.datar-promise .isi-card{
-		padding-bottom: 2rem;
-	}
-	#promise .container-fluid .datar-promise{
-		padding: 0 4rem;
+	#promise .datar-promise{
+		margin: 0 4.5rem;
 	}
 	/*testimonial*/
 	#testimonial .one{
