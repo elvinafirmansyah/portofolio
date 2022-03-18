@@ -137,7 +137,7 @@
 	content: '';
 	display: block;
 	border-right: 7px solid var(--lightpurple);
-	width: 4%;
+	width: 5px;
 }
 .jumbotron .sosial-media a{
 	text-decoration: none;
@@ -173,6 +173,7 @@
 .text-about p{
 	font-family: var(--poppins);
 	font-size: 23px;
+	text-transform: none;
 }
 .about-img{
 	padding-top: 9rem;
@@ -275,6 +276,7 @@
 #promise .card-text{
 	font-size: 18px;
 	font-weight: 400;
+	color: var(--purple)
 }
 
 /*Testimonial*/
@@ -369,7 +371,7 @@ footer{
 	/* jumbotron */
 	.jumbotron .text {
 		padding-left: 4rem;
-		top: 45%;
+		top: 36%;
 		position: absolute;
 	}
 	.jumbotron .text h2{
@@ -414,7 +416,7 @@ footer{
 	}
 	/*About*/
 	.text-about{
-		padding: 19rem 0 0 4rem;
+		padding: 10rem 0 0 4rem;
 	}
 	.text-about h1{
 		font-size: 65px;
@@ -423,7 +425,7 @@ footer{
 		color: var(--purple);
 	}
 	.text-about p{
-		font-size: 28px;
+		font-size: 25px;
 	}
 	#about{
 		background-image: url(img/ABOUT.png);
